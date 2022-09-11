@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Slider - @mohsnjli</title>
+    <style>
+        @font-face {
+            font-family: "shabnam";
+            font-style: normal;
+            font-weight: 500;
+            src: url(Font/Shabnam.ttf) format(truetype);
+        }
+
+        * {
+            font-family: "shabnam", sans-serif;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+        }
+
+        span {
+            display: flex;
+            text-align: center;
+            direction: rtl;
+            text-align: right;
+        }
+
+        html {
+            padding: 3rem;
+            background-color: #212123;
+            color: #EFEFEF;
+        }
+
+        .conteudo {
+            display: flex;
+            width: 350px;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 25px;
+            column-gap: 20px;
+        }
+
+        .card {
+            flex: 0 0 100%;
+            padding: 30px;
+            scroll-snap-align: start;
+            border-radius: 30px;
+        }
+
+        .card h1 {
+            margin-bottom: 2rem;
+        }
+
+        .card:nth-child(1) {
+            background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+        }
+
+        .card:nth-child(2) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+
+        .card:nth-child(3) {
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+        }
+
+        .card:nth-child(4) {
+            background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+        }
+
+        .card:nth-child(5) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="conteudo">
+        <article class="card">
+            <h1>HTML</h1>
+            <span dir="rtl">
+                HTML مخفف Hyper Text Markup Language بوده و در فارسی به آن زبان نشانه‌ گذاری ابرمتن می‌گویند. دقت کنید
+                که HTML یک زبان برنامه نویسی نیست، بلکه یک زبان نشان‌گذاری یا Markup language به حساب می‌آید. کدنویسی با
+                HTML قدم گذاشتن در جای پای بزرگان وب و شروع ساخت سایت‌های شگفت‌انگیز است.
+                اگر عاشق طراحی سایت هستید و برای ورود به این حوزه برنامه جدی دارید، آموزش HTML اولین قدم شما در این
+                مسیرخواهد بود. اگر می‌خواهید با مراحل شروع یادگیری طراحی سایت بیشتر آشنا شوید، مطالعه مطلب زیر را از دست
+                ندهید.
+            </span>
+        </article>
+        <article class="card">
+            <h1>CSS</h1>
+            <span>
+                وقتی صحبت از طراحی وب سایت به میان می آید، اولین سوال این است که html و css چیست ؟ با کمک css چه کارهایی
+                می توان انجام داد؟ کاربرد و ویژگی های css چیست؟ صفحات HTML به تنهایی زیبایی خاصی ندارند اما با استفاده
+                از دستورالعمل‌ها و زبان‌های مختلفی که برای طراحی سایت وجود دارد می‌توانید صفحه وب پویایی را ایجاد کنید و
+                فرمت صفحه را تغییر دهید. یکی از این زبان‌ها css می‌باشد که می‌تواند جلوه‌های زیبایی به سایت شما دهد.
+            </span>
+        </article>
+        <article class="card">
+            <h1>JS</h1>
+            <span>
+                JavaScript که به اختصار JS نیز نامیده می‌شود، یکی از محبوبترین زبان‌های برنامه نویسی است. جاوا اسکریپت
+                زبانی سطح بالا، داینامیک، شی‌گرا و تفسیری است که از شیوه‌های مختلف برنامه نویسی پشتیبانی می‌کند. از این
+                زبان می‌توان برای برنامه نویسی سمت سرور (Server Side)، اپلیکیشن‌های موبایل، بازی و اپلیکیشن‌های دسکتاپ
+                استفاده کرد. بنابراین می‌توان اینگونه برداشت کرد که زبان برنامه نویسی جاوا اسکریپت ، یک زبان همه فن حریف
+                است.
+            </span>
+        </article>
+        <article class="card">
+            <h1>GIT</h1>
+            <span>
+                اولین چیزی که باید بدانید این است که گیت (Git) با گیت ‌هاب (GitHub) فرق دارد. خیلی‌ها این دو را یکی فرض
+                می‌کنند. گیت هاب یک سایت هاست (Host) برای پروژه‌هاست که از گیت استفاده می‌کند.
+
+                گیت یک نوع سیستم کنترل ورژن (VCS) است که با آن می‌توانید تغییرات اعمال شده در فایل‌ها را ساده‌تر پیگیری
+                کنید. مثلاً، اگر فایلی را ویرایش کنید، گیت می‌تواند دقیقاً به شما بگوید که چه چیزی تغییر کرده است، چه
+                کسی آن را تغییر داده است و دلیلِ این تغییر چه بوده است.
+            </span>
+        </article>
+        <article class="card">
+            <h1>React JS</h1>
+            <span>
+                React js یک کتابخانه متن باز جاوا اسکریپت است که برای ساختن برنامه هایی با رابط کاربری خاص برای برنامه
+                های تک صفحه ای مورد استفاده قرار می گیرد. این کتابخانه همچنین برای مدیریت لایه های نمایشی برای برنامه
+                های وب و موبایل استفاده می شود.
+                همچنین کتابخانه React js این اجازه را میدهد تا بتوانید کامپوننت هایی با قابلیت استفاده مجدد نیز طراحی و
+                ایجاد کنید. در ابتدا React js توسط جردن والک که به عنوان یک مهندس نرم افزار در فیس بوک مشغول به کار بود
+                طراحی شد. برای اولین بار React js بر روی خبرنامه فیس بوک در سال ۲۰۱۱ و بر روی Instagram.com در سال ۲۰۱۲
+                پیاده سازی شد.
+            </span>
+        </article>
+    </main>
+</body>
+
+</html>
